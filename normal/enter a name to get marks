@@ -1,0 +1,17 @@
+n=int(input("Enter number of students:"))
+d={}
+for i in range(n):
+    name=input("Enter name:")
+    marks=int(input("Enter marks"))
+    d[name]=marks
+while True:
+    name=input("Enter a name to get marks:")
+    marks=d.get(name,-1)
+    if(marks==-1):
+        print("Stundet not found.")
+    else:
+        print("The marks of {} is {}".format(name,marks))
+    option=input("DO YOU WANT ANOTHER STUDENT MARKS PRESS YES|NO")
+    if(option=='NO'):
+        break
+print("Thank you for visiting our site.")
