@@ -1,0 +1,9 @@
+s='a3b2c1'
+output=''
+for x in s:
+    if(x.isalpha()):
+        output+=x
+        previous=x
+    else:
+        output+=previous*(int(x)-1)
+print(output)
