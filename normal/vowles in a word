@@ -1,0 +1,8 @@
+vowels=['a','e','i','o','u']
+word=input("Enter a word:")
+l=[]
+for x in word:
+    if(x in vowels):
+        if(x not in l):
+            l.append(x)
+print(l)
