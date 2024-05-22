@@ -1,0 +1,13 @@
+string=input("Enter a string")
+substring=input("Enter a substring:")
+flag=False
+pos=-1
+n=len(string)
+while True:
+    pos=string.find(substring,pos+1,n)
+    if(pos==-1):
+        break
+    print("Substring fount at:",pos)
+    flag=True
+if(flag==False):
+    print("Not fount")
