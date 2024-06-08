@@ -1,0 +1,13 @@
+
+import time
+def outer():
+    print("Outer function started....")
+    def inner():
+        print("Inner function start...")
+        time.sleep(1)
+        print("Execution")
+        time.sleep(1)
+        print("Ended")
+    print("Outer function calling inner..")
+    inner()
+outer()
