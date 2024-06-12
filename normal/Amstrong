@@ -1,0 +1,12 @@
+n=int(input("Enter a number to check amstrong or not:"))
+temp=n
+sum=0
+l=len(str(n))
+while(n>0):
+    digit=n%10
+    sum=sum+(digit**l)
+    n=n//10
+if(sum==temp):
+    print("Yes it is amstrong")
+else:
+    print("No it is not an amstroing")
