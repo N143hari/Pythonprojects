@@ -1,0 +1,14 @@
+class Toyounger(Exception):
+    def __init__(self,arg):
+        self.arg=arg
+class Toolder(Exception):
+    def __init__(self,arg):
+        self.arg=arg
+age=int(input("Enter your age:"))
+if(age>=18):
+    raise Toyounger('Now you are eligible to marry go and check your partner.')
+if(age<=18):
+    raise Toolder('just go school please dont think about marraige..')
+
+else:
+    print("You are not a person")
