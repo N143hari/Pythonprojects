@@ -1,0 +1,15 @@
+s='saveetha,school...of,engineering'
+s1=''
+output=''
+i=0
+for x in s:
+    if(x.isalnum()):
+        s1+=x
+s2=s1[::-1]
+for h in s:
+    if(h.isalpha()):
+        output+=s2[i]
+        i=i+1
+    else:
+        output+=h
+print(output)
