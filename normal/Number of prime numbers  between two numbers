@@ -1,0 +1,12 @@
+def call(s,e):
+    count=0
+    for i in range(s,e):
+        for j in range(2,i):
+            if(i%j==0):
+                break
+        else:
+            count+=1
+            print(i,end=' ')
+    print('\nThe number of prime numbers between {} and {} is={}'.format(s,e,count))
+
+call(1,1000)
