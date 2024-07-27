@@ -1,0 +1,10 @@
+n=int(input("ENter a number:"))
+for i in range(n+1):
+    if(i%3==0 and i%5==0):
+        print("Fizz and Buzz")
+    elif(i%3==0):
+        print("Fizzz")
+    elif(i%5==0):
+        print("Buzz")
+    else:
+        print(i)
