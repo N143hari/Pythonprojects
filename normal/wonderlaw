@@ -1,0 +1,30 @@
+class roller:
+    def __init__(self,height,age):
+        self.height=height
+        self.age=age
+    def start(self):
+        if(self.height>120):
+            print("Can run")
+            if(self.age<12):
+                print("Ticket is:  $5")
+            elif(self.age<=18 and self.age>=12):
+                    print("Ticket is:  $7")
+            elif(self.age>18):
+                print("Ticket is: $12")
+            option=input("If u want phone please press yes else no:")
+            if(option=='yes'):
+
+                print("Your total amount with photo is :")
+                if(self.age<12):
+                    print(5+3)
+                elif (self.age <= 18 and self.age >= 12):
+                    print(7+3)
+                elif (self.age > 18):
+                    print(12+3)
+            else:
+                print("Thanks")
+
+        else:
+            print("No")
+r=roller(125,11)
+r.start()
