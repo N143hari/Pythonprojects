@@ -1,0 +1,11 @@
+a=int(input("Enter a number:"))
+b=int(input("Enter b number:"))
+t1,t2=a,b
+while(b>0):
+    r=a%b
+    a=b
+    b=r
+gcd=a
+lcm=(t1*t2)/gcd
+print("The LCM of the two numbers are: ",lcm)
+print("The GCD of the two numbers are:  ",gcd)
