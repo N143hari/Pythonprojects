@@ -1,0 +1,13 @@
+print("Rock\nPaper\nScissor")
+p1=input("Enter your choice:")
+if(p1=='Rock'.lower()):
+    print("Paper.")
+    print("player 2 win the game")
+elif(p1=='paper'.lower()):
+    print('scissor')
+    print("player 2 win the game")
+elif(p1=='scissor'.lower()):
+    print('rock')
+    print("player 2 win the game")
+else:
+    print("Please choose valid ")
