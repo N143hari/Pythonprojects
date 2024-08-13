@@ -1,37 +1,31 @@
 class BankAccount:
-    def __init__(self, balance=0):
-        self.balance = balance
-
-    def deposit(self, amount):
-        if amount > 0:
-            self.balance += amount
+    def __init__(self,balance=0):
+        self.balance=balance
+    def deposit(self,amount):
+        if amount>0:
+            self.balance+=amount
             print(f"Deposited {amount}.")
         else:
             print("Invalid deposit amount.")
-
-    def withdraw(self, amount):
-        if 0 < amount <= self.balance:
-            self.balance -= amount
+    def withdraw(self,amount):
+        if 0<amount<=self.balance:
+            self.balance-=amount
             print(f"Withdrew {amount}.")
         else:
             print("Insufficient funds or invalid withdrawal amount.")
-
     def available_balance(self):
         print(f"Available Balance: {self.balance}")
 
 
 def main():
-    account = BankAccount()
-
+    account=BankAccount()
     while True:
         print("\nBank Account System")
         print("1. Deposit")
         print("2. Withdraw")
         print("3. Check Available Balance")
         print("4. Exit")
-
         choice = input("Enter your choice (1-4): ")
-
         if choice == '1':
             amount = float(input("Enter deposit amount: "))
             account.deposit(amount)
@@ -41,7 +35,7 @@ def main():
         elif choice == '3':
             account.available_balance()
         elif choice == '4':
-            print("Exiting the system. Thank you!")
+            print("Exiting the system. Thank you😊")
             break
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
