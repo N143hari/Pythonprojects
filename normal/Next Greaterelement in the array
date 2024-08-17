@@ -1,0 +1,15 @@
+a=eval(input("Enter an array:"))
+arr=[]
+for i in range(len(a)-1):
+    for j in range(i+1,len(a)):
+        if(a[i]<a[j]):
+            arr.append(a[j])
+            break
+    else:
+        arr.append(-1)
+
+arr.insert(len(a),-1)
+if(len(arr)==len(a)):
+    print(arr)
+else:
+    print("Wrong.")
