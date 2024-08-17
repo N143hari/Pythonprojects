@@ -1,0 +1,13 @@
+def nearest_div(n,m):
+    a=n%m
+    b=n-a
+    c=b+m
+    d=(n-b)
+    e=abs(n-c)
+    f={}
+    f[b]=d
+    f[c]=e
+    r=min(f.values())
+    result={k for k,v in f.items() if(v==r)}
+    return result
+print(nearest_div(26,3))
