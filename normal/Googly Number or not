@@ -1,0 +1,18 @@
+n=int(input("Enter:"))
+temp=n
+sum=0
+while(n>0):
+    dig=n%10
+    sum+=dig
+    n=n//10
+for i in range(sum+1):
+    flag=1
+    for j in range(2,i):
+        if(i%j==0):
+            flag=0
+            break
+print(sum)
+if(flag==1):
+    print(temp,"Is Googly number.")
+else:
+    print(temp," NO")
