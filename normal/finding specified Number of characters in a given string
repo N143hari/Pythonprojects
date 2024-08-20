@@ -1,0 +1,10 @@
+def find(s,len,sub):
+    count=0
+    for i in range(len):
+        if(s[i]==sub):
+            count+=1
+    return count
+s=input("Enter strng:")
+len=len(s)
+sub=input("Enter a character to find:")
+print(find(s,len,sub))
