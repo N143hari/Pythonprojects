@@ -1,0 +1,15 @@
+def binary(s):
+    count=0
+    ans=''
+    for i in range(len(s)):
+        if(s[i]=='1'):
+            count+=1
+        else:
+            if(count>0):
+                ans+=chr(64+count)
+                count=0
+    if(count>0):
+        ans+=chr(64+count)
+    return ans
+s=input("Enter:")
+print(binary(s))
