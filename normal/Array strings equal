@@ -1,0 +1,7 @@
+def equale(s1,s2):
+    a=''.join(s1)
+    b=''.join(s2)
+    return a==b
+s1=['ab', 'c']
+s2=["a",'bc']
+print(equale(s1,s2))
