@@ -1,0 +1,11 @@
+def miss(l):
+    sum=0
+    totalsum=0
+    l.sort(reverse=False)
+    for i in range(len(l)):
+        sum+=l[i]
+    for i in range(l[-1]+1):
+        totalsum+=i
+    print("Missing number is:",totalsum-sum)
+l=[int(x) for x in input("Enter:").split()]
+miss(l)
