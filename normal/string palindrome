@@ -1,0 +1,9 @@
+def palindrome(s):
+    temp=''
+    for x in range(len(s)-1,-1,-1):
+        temp+=s[x]
+    if(temp==s):
+        print(f"{s} is palindrome.")
+    else:
+        print(f"{s} is not a palindrome.")
+palindrome('level')
