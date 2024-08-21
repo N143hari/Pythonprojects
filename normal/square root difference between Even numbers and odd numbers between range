@@ -1,0 +1,14 @@
+"#####SUM OF EVEN NUMBERS AND ODD NUMBERS DIFFERENCE#####"
+import math
+def cal(s,n):
+    sumeven=0
+    sumodd=0
+    for i in range(s,n+1):
+        if(n%2==0):
+            sumeven+=math.sqrt(i)
+        else:
+            sumodd+=math.sqrt(i)
+    return abs(sumeven-sumodd)
+s=int(input("Enter:"))
+n=int(input("Enter:"))
+print(cal(s,n))
