@@ -1,0 +1,13 @@
+def convert(s):
+    count=0
+    for x in s:
+        if(x.isupper()):
+            count+=1
+        else:
+            count-=1
+    if(count>=1):
+        print(s.upper())
+    else:
+        print(s.lower())
+s=input("Enter:")    
+convert(s)
