@@ -1,0 +1,12 @@
+import math
+def single(n):
+    while(len(str(n))>1):
+        if(n%2==0):
+            n=math.floor(n-2)//2
+        else:
+            n=math.floor(n//2)
+    else:
+        n=n
+    return n
+n=int(input("ENter:"))
+print(single(n))
