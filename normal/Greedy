@@ -1,0 +1,16 @@
+coins=[int(x) for x in input("Enter a list of coins:").split()]
+def greedy(coins,amount):
+    sum=0
+    coins.sort(reverse=True)
+    l=[]
+    for i in coins:
+        while True:
+            if(i<=amount):
+                if((sum+i)<=amount):
+                    sum+=i
+                    l.append(i)
+                else:
+                    break
+    print("The coins for money are {} and total coints is {}".format(l,len(l)))
+amount=int(input("Enter amount:"))
+greedy(coins,amount)
