@@ -1,0 +1,24 @@
+class stack:
+    def __init__(self):
+        self.item=[]
+    def push(self,item):
+        self.item.append(item)
+    def pop(self):
+        if(self.item==[]):
+            return None
+        else:
+            return self.item.pop()
+    def size(self):
+        return len(self.item)
+    def isEmpty(self):
+        return self.item==[]
+def reverse(str):
+    temstr=''
+    s=stack()
+    for i in range(len(str)):
+        s.push(str[i])
+    while not s.isEmpty():
+        temp=s.pop()
+        temstr+=temp
+    return temstr
+print(reverse('hari'))
